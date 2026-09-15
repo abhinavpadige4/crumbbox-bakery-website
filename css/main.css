@@ -1,0 +1,66 @@
+@import './_variables.css';
+
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-secondary);
+  background-color: var(--cream);
+  color: var(--dark-brown);
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--spacing-lg) 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-primary);
+  color: var(--brown);
+  margin-bottom: var(--spacing-sm);
+}
+
+p {
+  margin-bottom: var(--spacing-sm);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.btn {
+  display: inline-block;
+  background-color: var(--brown);
+  color: var(--cream);
+  padding: var(--spacing-sm) var(--spacing-lg);
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--dark-brown);
+  transform: translateY(-2px);
+}
+
+.cta-btn {
+  background-color: var(--accent);
+  color: var(--dark-brown);
+  font-size: 1.1rem;
+  padding: var(--spacing-sm) var(--spacing-xl);
+}
+
+.cta-btn:hover {
+  background-color: var(--brown);
+  color: var(--cream);
+}
